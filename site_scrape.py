@@ -50,7 +50,7 @@ def scrape_and_create(folder_path=configuration.FOLDER_PATH,
                 work_time = office_item.find_element(By.XPATH, ".//div[@sg-office-work-time]//dd//span").text
                 work_time = work_time.split('.')
 
-                if len(work_time) == 4:  # Ensure that work_time contains 4 parts
+                if len(work_time) == 4:  # [0] = Monday-Friday, [1] = Saturday, [2] = Sunday, [3] = empty string
                     name = office_item.find_element(By.XPATH, ".//p[@bo-bind='item.name']").text
                     address = office_item.find_element(By.XPATH, ".//p[@bo-bind='item.address']").text
                     phone = office_item.find_element(By.XPATH, ".//p[@bo-bind='item.phones[0].phone']").text
