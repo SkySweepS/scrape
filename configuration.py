@@ -2,8 +2,7 @@
 Configuration Module
 
 This module contains configurations for the project, such as file paths,
-email settings, and the URL to scrape. Sensitive information (like email
-passwords) should be stored in environment variables for better security.
+email settings, and the URL to scrape.
 """
 
 import os
