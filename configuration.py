@@ -21,5 +21,5 @@ RECIPIENT_EMAIL = "s.petkov991@icloud.com"
 EMAIL_SUBJECT = "Fibank Branches Data"
 EMAIL_BODY = "Here is the Excel file with the Fibank branch information."
 
-# Sensitive Information (use environment variables)
-EMAIL_PASSWORD = os.getenv("PASSWORD")  # Loaded securely from environment
+# Sensitive Information
+EMAIL_PASSWORD = os.getenv("PASSWORD")  # Loaded securely from .env file
